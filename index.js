@@ -23,19 +23,20 @@ client.on('ready', async () => {
   console.log(`${client.user.tag} - rich presence started!`);
 
   const r = new Discord.RichPresence()
-    .setApplicationId('')
+    .setApplicationId('1203567972988362792')
     .setType('STREAMING')
-    .setURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ') //Must be a youtube video link 
-    .setState('Recording')
-    .setName('')
-    .setDetails(`Valorant [${formatTime()}]`)
+    .setURL('https://www.youtube.com/@ELITE-TRUCKER_OG') //Must be a youtube video link 
+    .setState('🔶 | ETL VTC CEO')
+    .setName('EL!TE')
+    .setDetails(`🪐 | PLAY WITH US!`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Boring') //Text when you hover the Large image
-    .setAssetsSmallImage('') //You can put links in tenor or discord and etc.
-    .setAssetsSmallText('Twitch') //Text when you hover the Small image
-    .addButton('Watch', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ')
-    .addButton('Donate', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+ .setAssetsLargeImage('https://cdn.discordapp.com/icons/1066109573544554647/a_f163b60f58c046aab1016f0c18ed565e.gif') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText('ELITE TRUCKERS LOGISTICS') //Text when you hover the Large image
+    .setAssetsSmallImage('https://cdn.discordapp.com/attachments/1153277068797292567/1203638200451596288/1707040109579.gif') //You can put links in tenor or discord and etc.
+    .setAssetsSmallText('ETS2 with Elite Truckers!') //Text when you hover the Small image
+    .addButton('TRUCKERSMP', 'https://truckersmp.com/vtc/60317')
+    .addButton('TRUCKSBOOK', 'https://trucksbook.eu/company/167843')
+    .addButton('ETL VTC 🧡', 'https://elitetruckerslogistics.com');
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
